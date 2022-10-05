@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Indie+Flower&family=Lobster&display=swap');
+
+:root {  
+  --color-primary: #212121;
+  --color-secondary: #424242;
+  --color-tertiary: #4e4d4d;
+  --letters: #cdcbcb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  background: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  flex-wrap: wrap;
+}
+
+header > h1 {
+  font-family: 'Carter One', cursive;
+  font-size: 6rem;
+  color: var(--letters);
+  font-weight: 900;
+}
+
+header > img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #f1e50680;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  width: 100%;
+  height: 5rem;  
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: var(--color-tertiary);  
+}
+
+.filters label {
+  font-size: 2rem;
+  color: var(--letters);
+  margin-right: 1rem;
+}
+
+.filters select {
+  width: 14rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--letters);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.filters button {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--letters);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--color-secondary); 
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px #fff;
+}
+
+.render-book {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book {
+  width: 30rem;  
+  height: 15rem;
+  border: groove 10px #532001; 
+  margin: 1rem;
+  display: flex;
+}
+
+.img-book {
+  width: 40%;
+  height: 100%;    
+}
+
+.description-book {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #aa3b07;
+}
+
+.img-book img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-book span {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
